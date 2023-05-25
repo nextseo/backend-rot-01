@@ -1,0 +1,15 @@
+{
+   "version":2,
+  "builds": [
+    {
+      "src": "auctions/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "auctions/wsgi.py"
+    }
+  ]
+}
